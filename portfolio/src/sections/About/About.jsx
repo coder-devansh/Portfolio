@@ -107,7 +107,7 @@ export const About = () => {
               className="image-wrapper"
             >
               <img
-                src="/src/assets/Devansh3.png"
+                src="/public/assets/Devansh3.png"
                 alt="Profile"
                 loading="lazy"
                 className="profile-img"
