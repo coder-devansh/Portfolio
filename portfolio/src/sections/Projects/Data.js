@@ -4,7 +4,7 @@ export const projects = [
     title: "Full stack Job platform",
     description: "A full-featured online application for applying job and admin portal for uploading the jobs.",
     tags: ["React", "Node.js", "MongoDB", "Multer"],
-    image: "/public/assets/image.png",
+    image: "/assets/image.png",
     demoUrl: "https://linkedin-3jua.vercel.app",
     codeUrl: "https://github.com/coder-devansh/linkedin"
   },
@@ -13,7 +13,7 @@ export const projects = [
     title: "Citizen Services",
     description: "A productivity application for organizing government schemes with drag-and-drop functionality.",
     tags: ["React", "MongoDb", "Material UI"],
-    image: "/public/assets/project-2.png",
+    image: "/assets/project-2.png",
     demoUrl: "https://scheme-sage.vercel.app/",
     codeUrl: "#"
   },
@@ -22,7 +22,7 @@ export const projects = [
     title: "E-commerce Dashboard",
     description: "A productivity application for organizing the stock and inventory and a dashboard for showing this.",
     tags: ["React", "MongoDb", "Material UI"],
-    image: "/public/assets/image1.png",
+    image: "/assets/image1.png",
     demoUrl: "https://byte-mart-8gsj.vercel.app/",
     codeUrl: "#"
   },
