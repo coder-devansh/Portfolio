@@ -81,13 +81,13 @@ export const Contact = () => {
             </ul>
             <div className="social-links">
               <a href="https://github.com/coder-devansh/" target="_blank" rel="noopener noreferrer">
-                <img src="/src/assets/github.png" alt="GitHub" />
+                <img src="/assets/github.png" alt="GitHub" />
               </a>
               <a href="https://www.linkedin.com/in/devansh-bansal-77478a27b/" target="_blank" rel="noopener noreferrer">
-                <img src="/src/assets/linkedin.png" alt="LinkedIn" />
+                <img src="/assets/linkedin.png" alt="LinkedIn" />
               </a>
               <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-                <img src="/src/assets/twitter.jpg" alt="Twitter" />
+                <img src="/assets/twitter.jpg" alt="Twitter" />
               </a>
             </div>
           </div>

@@ -1,5 +1,5 @@
+import { Routes, Route } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import { Header } from './components/Header/Header';
 import { Hero } from './sections/Hero/Hero';
@@ -10,7 +10,6 @@ import { Contact } from './sections/Contact/Contact';
 import { Footer } from './components/Footer/Footer';
 import { ThemeToggle } from './components/ThemeToggle/ThemeToggle';
 import Achievements from './sections/Achiements/Achievements';
-// import { ScrollToTop } from './components/ScrollToTop/ScrollToTop';
 
 export default function App() {
   const [theme, setTheme] = useState('light');
@@ -24,27 +23,23 @@ export default function App() {
   };
 
   return (
-    
-      <div className="app">
-        <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
-        <Header />
+    <div className="app">
+      <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
+      <Header />
 
+      <main>
+        <Routes>
+          <Route path="/" element={<Hero />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/achievements" element={<Achievements />} />
+          <Route path="*" element={<h2>Page Not Found</h2>} />
+        </Routes>
+      </main>
 
-        <main>
-          <Routes>
-            <Route path="/" element={<Hero />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path='/achievements'element={<Achievements/>}/>
-            {/* Optional */}
-            <Route path="*" element={<h2>Page Not Found</h2>} />
-          </Routes>
-        </main>
-
-        <Footer />
-        {/* <ScrollToTop /> */}
-      </div>
-   
+      <Footer />
+    </div>
   );
 }
