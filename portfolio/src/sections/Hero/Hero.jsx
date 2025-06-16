@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import heroImage from './hero.jpg';
-
+import { NavLink } from 'react-router-dom';
 import './Hero.css';
 
 export const Hero = () => {
@@ -21,24 +21,25 @@ export const Hero = () => {
             I build exceptional digital experiences with modern technologies.
           </p>
           <div className="hero__buttons">
-            <motion.a
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              href="/projects"
-              className="hero__button hero__button--primary"
-            >
-              View My Work
-            </motion.a>
-            <motion.a
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              href="/contact"
-              className="hero__button hero__button--secondary"
-            >
-              Contact Me
-            </motion.a>
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+              <NavLink
+                to="/projects"
+                className="hero__button hero__button--primary"
+              >
+                View My Work
+              </NavLink>
+            </motion.div>
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+              <NavLink
+                to="/contact"
+                className="hero__button hero__button--secondary"
+              >
+                Contact Me
+              </NavLink>
+            </motion.div>
           </div>
         </motion.div>
+
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -47,7 +48,6 @@ export const Hero = () => {
         >
           <div className="hero__image">
             <img src={heroImage} alt="Devansh" className="hero__image" />
-
           </div>
         </motion.div>
       </div>
