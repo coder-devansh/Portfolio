@@ -1,0 +1,8 @@
+/*
+  Legacy file: global styling is driven by src/styles/*.css.
+  Keep this file minimal so it doesn't conflict if imported.
+*/
+
+.app {
+  width: 100%;
+}

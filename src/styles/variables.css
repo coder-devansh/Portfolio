@@ -1,0 +1,105 @@
+/* Design tokens and theme variables */
+
+:root {
+	/* Brand */
+	--primary-color: #7c3aed; /* violet-600 */
+	--primary-dark: #6d28d9; /* violet-700 */
+	--secondary-color: #22d3ee; /* cyan-400 */
+	--accent-color: #f59e0b; /* amber-500 */
+
+	/* Backgrounds + surfaces (default: dark) */
+	--bg-color: #070a12;
+	--bg-elevated: #0b1020;
+	--card-bg: rgba(255, 255, 255, 0.04);
+	--surface-bg: rgba(255, 255, 255, 0.06);
+	--surface-strong: rgba(255, 255, 255, 0.085);
+
+	/* Text */
+	--text-color: #e5e7eb;
+	--text-muted: rgba(229, 231, 235, 0.72);
+	--text-primary: var(--text-color);
+
+	/* Borders + rings */
+	--border-color: rgba(148, 163, 184, 0.16);
+	--border-width: 1px;
+	--ring: 0 0 0 4px rgba(124, 58, 237, 0.22);
+
+	/* Status */
+	--success-color: #22c55e;
+	--error-color: #ef4444;
+
+	/* Typography */
+	--font-primary: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+	--text-4xl: clamp(2.35rem, 5.6vw, 3.75rem);
+	--text-3xl: clamp(1.85rem, 4.2vw, 2.65rem);
+	--text-2xl: clamp(1.35rem, 2.8vw, 1.85rem);
+	--text-xl: 1.25rem;
+	--text-lg: 1.125rem;
+	--text-base: 1rem;
+
+	/* Layout */
+	--container-max: 1120px;
+	--header-height: 72px;
+	--section-pad: clamp(3.5rem, 6vw, 6rem);
+
+	/* Spacing */
+	--spacing-2xs: 0.25rem;
+	--spacing-xs: 0.5rem;
+	--spacing-sm: 0.75rem;
+	--spacing-md: 1rem;
+	--spacing-lg: 1.5rem;
+	--spacing-xl: 2rem;
+	--spacing-2xl: 3rem;
+	--spacing-xxl: 4rem;
+
+	/* Radius */
+	--radius-sm: 10px;
+	--border-radius: 14px;
+	--border-radius-lg: 18px;
+	--border-radius-xl: 24px;
+	--radius-pill: 999px;
+
+	/* Shadows */
+	--shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.25);
+	--shadow: 0 16px 40px rgba(0, 0, 0, 0.38);
+	--shadow-md: 0 22px 70px rgba(0, 0, 0, 0.45);
+	--shadow-lg: 0 28px 90px rgba(0, 0, 0, 0.58);
+	--box-shadow: var(--shadow);
+
+	/* Motion */
+	--transition-fast: 120ms ease;
+	--transition-normal: 220ms ease;
+	--transition-slow: 420ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+[data-theme='light'] {
+	--bg-color: #f8fafc;
+	--bg-elevated: #ffffff;
+	--card-bg: rgba(255, 255, 255, 0.86);
+	--surface-bg: rgba(15, 23, 42, 0.04);
+	--surface-strong: rgba(15, 23, 42, 0.06);
+
+	--text-color: #0b1220;
+	--text-muted: rgba(11, 18, 32, 0.68);
+	--text-primary: var(--text-color);
+	--border-color: rgba(15, 23, 42, 0.12);
+	--ring: 0 0 0 4px rgba(124, 58, 237, 0.16);
+
+	--primary-color: #6d28d9;
+	--primary-dark: #5b21b6;
+	--secondary-color: #06b6d4;
+	--accent-color: #f59e0b;
+}
+
+[data-theme='dark'] {
+	--bg-color: #070a12;
+	--bg-elevated: #0b1020;
+	--card-bg: rgba(255, 255, 255, 0.04);
+	--surface-bg: rgba(255, 255, 255, 0.06);
+	--surface-strong: rgba(255, 255, 255, 0.085);
+
+	--text-color: #e5e7eb;
+	--text-muted: rgba(229, 231, 235, 0.72);
+	--text-primary: var(--text-color);
+	--border-color: rgba(148, 163, 184, 0.16);
+}

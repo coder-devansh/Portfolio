@@ -1,0 +1,142 @@
+.projects.section {
+  position: relative;
+}
+
+.projects.section .section-title,
+.projects.section .section-subtitle {
+  text-align: center;
+}
+
+.projects__tabs {
+  margin: 1.25rem auto 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.projects__tab {
+  appearance: none;
+  border: 1px solid var(--border-color);
+  background: var(--surface-bg);
+  color: var(--text-color);
+  border-radius: var(--radius-pill);
+  padding: 0.55rem 0.95rem;
+  font-weight: 850;
+  font-size: 0.92rem;
+  cursor: pointer;
+  transition: transform var(--transition-fast), border-color var(--transition-fast), filter var(--transition-fast), background var(--transition-fast);
+  backdrop-filter: blur(10px);
+}
+
+.projects__tab:hover {
+  transform: translateY(-1px);
+  border-color: rgba(124, 58, 237, 0.35);
+}
+
+.projects__tab.is-active {
+  background: linear-gradient(135deg, rgba(124, 58, 237, 0.22), rgba(34, 211, 238, 0.14));
+  border-color: rgba(124, 58, 237, 0.45);
+}
+
+.projects__tabCount {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.7rem;
+  height: 1.35rem;
+  margin-left: 0.5rem;
+  padding: 0 0.45rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  background: rgba(10, 14, 26, 0.35);
+  color: rgba(229, 231, 235, 0.9);
+  font-size: 0.78rem;
+  font-weight: 900;
+}
+
+.projects__directories {
+  margin-top: 1.25rem;
+  display: grid;
+  gap: 1.75rem;
+}
+
+.projects__directory {
+  border-radius: var(--border-radius-xl);
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  backdrop-filter: blur(12px);
+  padding: clamp(1rem, 2.4vw, 1.5rem);
+  position: relative;
+  overflow: hidden;
+}
+
+.projects__directory::before {
+  content: '';
+  position: absolute;
+  inset: -140px;
+  background:
+    radial-gradient(620px circle at 18% 22%, rgba(124, 58, 237, 0.16), transparent 60%),
+    radial-gradient(680px circle at 86% 30%, rgba(34, 211, 238, 0.10), transparent 62%);
+  pointer-events: none;
+}
+
+.projects__directoryHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.projects__directoryTitleWrap {
+  max-width: 72ch;
+}
+
+.projects__directoryTitle {
+  margin: 0;
+  font-size: 1.25rem;
+  letter-spacing: -0.02em;
+}
+
+.projects__directorySubtitle {
+  margin: 0.4rem 0 0;
+  color: var(--text-muted);
+  font-size: 0.98rem;
+}
+
+.projects__directoryCount {
+  white-space: nowrap;
+}
+
+.projects__grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1.25rem;
+  position: relative;
+}
+
+.projects__item {
+  grid-column: span 12;
+}
+
+@media (min-width: 720px) {
+  .projects__item {
+    grid-column: span 6;
+  }
+}
+
+@media (min-width: 1040px) {
+  .projects__item {
+    grid-column: span 6;
+  }
+}
+
+@media (max-width: 720px) {
+  .projects__directoryHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
