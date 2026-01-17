@@ -10,6 +10,7 @@ const mainNavItems = [
 
 const portfolioNavItems = [
   { name: 'Projects', href: '/projects' },
+  { name: 'Profiles', href: '/profiles' },
   { name: 'Achievements', href: '/achievements' },
   { name: 'Skills', href: '/skills' },
 ];

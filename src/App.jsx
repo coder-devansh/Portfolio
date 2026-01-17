@@ -11,6 +11,7 @@ import { ThemeToggle } from './components/ThemeToggle/ThemeToggle';
 import Achievements from './sections/Achiements/Achievements';
 import { ScrollToTop } from './components/ScrollToTop/ScrollToTop';
 import { useTheme } from './hooks/useTheme';
+import { Profiles } from './sections/Profiles/Profiles';
 
 export default function App() {
   const { theme, toggleTheme } = useTheme();
@@ -27,6 +28,7 @@ export default function App() {
             <Route path="/" element={<Hero />} />
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
+            <Route path="/profiles" element={<Profiles />} />
             <Route path="/skills" element={<Skills />} />
             <Route path="/contact" element={<Contact />} />
             <Route path='/achievements'element={<Achievements/>}/>
