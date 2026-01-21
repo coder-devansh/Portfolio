@@ -11,7 +11,7 @@ export const About = () => {
 
   const handleViewResume = () => {
     // Replace with your actual resume URL or file path
-    const resumeUrl = 'https://drive.google.com/file/d/1MkjDo9leWvbqL4nb0_Bn58qkVCjFuqSA/view?usp=sharing';
+    const resumeUrl = 'https://drive.google.com/file/d/1HtwodPelXLHUHGSOX7bvwlD5r--uhMLC/view?usp=sharing';
     window.open(resumeUrl, '_blank');
   };
 
